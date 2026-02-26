@@ -23,3 +23,25 @@ class Manager extends Employee {
     return `${this.name} manages the ${this.department} department with a team of ${this.teamSize}.`;
   }
 }
+
+// Company class to manage employees
+class Company {
+  constructor() {
+    this.employees = [];
+  }
+
+  addEmployee(employee) {
+    this.employees.push(employee);
+  }
+
+  listEmployees() {
+    this.employees.forEach(emp => {
+      console.log(emp.describe());
+    });
+  }
+}
+
+// Create sample employees and managers
+const emp1 = new Employee("Alice Johnson", "Marketing");
+const emp2 = new Employee("Carlos Rivera", "Finance");
+const mgr1 = new Manager("Dana Lee", "Engineering", 8);
