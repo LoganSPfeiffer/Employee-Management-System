@@ -45,3 +45,12 @@ class Company {
 const emp1 = new Employee("Alice Johnson", "Marketing");
 const emp2 = new Employee("Carlos Rivera", "Finance");
 const mgr1 = new Manager("Dana Lee", "Engineering", 8);
+
+// Instantiate company and add employees
+const myCompany = new Company();
+myCompany.addEmployee(emp1);
+myCompany.addEmployee(emp2);
+myCompany.addEmployee(mgr1);
+
+// List all employees
+myCompany.listEmployees();
